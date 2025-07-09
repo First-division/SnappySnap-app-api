@@ -16,6 +16,10 @@ app.get("/api/health", (req, res) => {
   res.status(200).json({ success: true });
 });
 
+app.get("/", (req, res) => {
+  res.send("API is running and is healthy!");
+});
+
 //
 // 📸 Entries Routes
 //
